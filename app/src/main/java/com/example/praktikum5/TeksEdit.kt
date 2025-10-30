@@ -1,5 +1,6 @@
 package com.example.praktikum5
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -23,7 +24,8 @@ fun  FormDataDiri(modifier: Modifier){
     var jenis by remember { mutableStateOf(value = "") }
 
     val gender:List <String> = listOf ("Laki-Laki", "Perempuan")
-    Column (modifier= Modifier .padding(top = 50.dp)){
+    Column (modifier= Modifier .padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top){
     }
 
 }
