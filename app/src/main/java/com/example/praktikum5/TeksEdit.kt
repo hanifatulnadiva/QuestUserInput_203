@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -106,7 +107,9 @@ fun  FormDataDiri(modifier: Modifier){
             thickness = dimensionResource(id=R.dimen.divider_tipis),
             color = Color.DarkGray
         )
-        ElevatedCard {  }
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
+        ) {  }
     }
 
 }
