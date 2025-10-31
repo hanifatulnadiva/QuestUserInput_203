@@ -1,12 +1,16 @@
 package com.example.formulir.ui.theme
 
+import android.R
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun FormulirPendaftaran(modifier: Modifier){
@@ -23,7 +27,9 @@ fun FormulirPendaftaran(modifier: Modifier){
     val gender: List<String> = listOf("Laki-Laki", "Perempuan")
     val status_perkawinan: List<String> = listOf("Janda", "Lajang", "Duda")
 
-    Column  {  }
+    Column  (modifier= Modifier
+        .fillMaxSize()
+        .background(color=Color.White)) {  }
 
 }
 
