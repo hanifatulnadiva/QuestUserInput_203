@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">formulir</string>
+    <string name="judul">Formulir Pendaftaran</string>
+    <string name="nama">NAMA LENGKAP</string>
+    <string name="jenis_kelamin"> JENIS KELAMIN</string>
+    <string name="status">STATUS</string>
+    <string name="alamat"> ALAMAT </string>
 </resources>
