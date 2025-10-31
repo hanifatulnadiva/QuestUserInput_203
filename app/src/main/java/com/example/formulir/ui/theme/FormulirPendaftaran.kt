@@ -1,5 +1,6 @@
 package com.example.formulir.ui.theme
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -21,6 +22,8 @@ fun FormulirPendaftaran(modifier: Modifier){
 
     val gender: List<String> = listOf("Laki-Laki", "Perempuan")
     val status_perkawinan: List<String> = listOf("Janda", "Lajang", "Duda")
+
+    Column  {  }
 
 }
 
