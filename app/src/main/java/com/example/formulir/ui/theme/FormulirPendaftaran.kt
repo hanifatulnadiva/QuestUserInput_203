@@ -14,5 +14,11 @@ fun FormulirPendaftaran(modifier: Modifier){
     var textStatus by remember { mutableStateOf(value="") }
     var textAlamat by remember { mutableStateOf(value="") }
 
+    var Nama by remember { mutableStateOf(value = "") }
+    var JK by remember { mutableStateOf(value = "") }
+    var Status by remember { mutableStateOf(value = "") }
+    var Alamat by remember { mutableStateOf(value = "") }
+
+
 }
 
