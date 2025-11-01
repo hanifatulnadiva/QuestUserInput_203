@@ -5,4 +5,5 @@
     <string name="jenis_kelamin"> JENIS KELAMIN</string>
     <string name="status">STATUS</string>
     <string name="alamat"> ALAMAT </string>
+    <string name="submit"> SUBMIT</string>
 </resources>

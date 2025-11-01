@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.OutlinedTextField
@@ -134,6 +136,22 @@ fun FormulirPendaftaran(modifier: Modifier){
                         label = { Text("Alamat") },
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Button(
+                        modifier= Modifier .fillMaxWidth(fraction = 1f),
+                        //enabled = textAlamat.isNotEmpty(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id=R.color.purple_500 )
+                        ),
+                        onClick = {
+                            Nama=textNama
+                            JK=textJK
+                            Status=textStatus
+                            Alamat=textAlamat
+
+                        }
+                    ){
+                        Text(text=stringResource(id=R.string.submit))
+                    }
                 }
 
             }
