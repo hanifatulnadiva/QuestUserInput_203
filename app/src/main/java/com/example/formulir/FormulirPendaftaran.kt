@@ -76,7 +76,20 @@ fun FormulirPendaftaran(modifier: Modifier){
                 )
             )
             {
-
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(text = stringResource(id=R.string.nama))
+                    OutlinedTextField(
+                        value = textNama,
+                        onValueChange = { textNama = it },
+                        label = { Text("Isi nama lengkap") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
             }
         }
 
