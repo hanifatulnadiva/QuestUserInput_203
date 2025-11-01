@@ -5,13 +5,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -66,6 +66,17 @@ fun FormulirPendaftaran(modifier: Modifier){
             .fillMaxWidth()
             .background(color = colorResource(id=R.color.ungu_muda))
         ){
+            Card(
+                modifier = Modifier
+                    .padding(all = 25.dp)
+                    .fillMaxWidth(),
+                elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id=R.color.white)
+                )
+            ){
+                
+            }
         }
 
     }
