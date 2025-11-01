@@ -67,7 +67,7 @@ fun FormulirPendaftaran(modifier: Modifier){
             )
         }
         Box(modifier= Modifier
-            .fillMaxWidth()
+            .fillMaxSize( )
             .background(color = colorResource(id=R.color.ungu_muda))
         ){
             Card(
