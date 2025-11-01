@@ -108,6 +108,25 @@ fun FormulirPendaftaran(modifier: Modifier){
                             }
                         }
                     }
+                    Text(text = stringResource(id=R.string.status))
+                    Column {
+                        status_perkawinan.forEach { item->
+                            Row(modifier= Modifier
+                                .selectable(
+                                    selected = textStatus == item,
+                                    onClick = {textStatus==item}
+                                ), verticalAlignment = Alignment.CenterVertically){
+                                RadioButton(
+                                    selected=textStatus==item,
+                                    onClick = {
+                                        textStatus=item
+                                    }
+                                )
+                                Text(text = item)
+                            }
+
+                        }
+                    }
                 }
 
             }
