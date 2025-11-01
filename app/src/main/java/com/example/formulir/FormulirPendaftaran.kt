@@ -127,6 +127,13 @@ fun FormulirPendaftaran(modifier: Modifier){
 
                         }
                     }
+                    Text(text=stringResource(id=R.string.alamat))
+                    OutlinedTextField(
+                        value = textAlamat,
+                        onValueChange = { textAlamat = it },
+                        label = { Text("Alamat") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
                 }
 
             }
