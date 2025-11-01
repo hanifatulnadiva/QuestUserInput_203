@@ -19,7 +19,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormulirPendaftaran(modifier: Modifier){
@@ -48,7 +51,12 @@ fun FormulirPendaftaran(modifier: Modifier){
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
             ){
-
+            Text(text= stringResource(id = R.string.judul),
+                fontFamily = FontFamily.Serif,
+                fontWeight = FontWeight.Bold,
+                fontSize = 30.sp,
+                color = Color.White
+            )
         }
 
     }
