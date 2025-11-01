@@ -74,8 +74,9 @@ fun FormulirPendaftaran(modifier: Modifier){
                 colors = CardDefaults.cardColors(
                     containerColor = colorResource(id=R.color.white)
                 )
-            ){
-                
+            )
+            {
+
             }
         }
 
